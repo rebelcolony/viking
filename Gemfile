@@ -8,7 +8,7 @@ gem 'rails', '3.0.7'
 gem 'sqlite3'
 gem 'factory_girl_rails'
 gem 'mysql2', '0.2.11'
-
+gem "rake", "0.8.7"
 
 # Use unicorn as the web server
 # gem 'unicorn'
