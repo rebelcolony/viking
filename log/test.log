@@ -2856,3 +2856,610 @@ Completed 302 Found in 1ms
   Parameters: {"item"=>{"number"=>5, "title"=>"tasty21", "description"=>"A very tasty pizza8", "price"=>"109"}, "id"=>"298486375"}
 Redirected to http://test.host/
 Completed 302 Found in 1ms
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty1') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty1', '2011-07-31 15:01:34.792973', '2011-07-31 15:01:34.792973')[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty2') LIMIT 1
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty2', '2011-07-31 15:01:34.845801', '2011-07-31 15:01:34.845801')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."title" IS NULL) LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."description" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty4') LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty4', '2011-07-31 15:01:34.915417', '2011-07-31 15:01:34.915417')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."title" = 'tasty3') LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."description" = 'Kjempe pizza') LIMIT 1[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "items" ("number", "title", "description", "price", "created_at", "updated_at", "category_id") VALUES (5, 'tasty3', 'Kjempe pizza', '109', '2011-07-31 15:01:34.918198', '2011-07-31 15:01:34.918198', 298486375)
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty6') LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty6', '2011-07-31 15:01:34.964471', '2011-07-31 15:01:34.964471')
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."title" = 'tasty5') LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."description" = 'Kjempe pizza') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty7') LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty7', '2011-07-31 15:01:35.005737', '2011-07-31 15:01:35.005737')
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."title" = 'Storpizza') LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza1') LIMIT 1
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "items" ("number", "title", "description", "price", "created_at", "updated_at", "category_id") VALUES (5, 'Storpizza', 'A very tasty pizza1', '109', '2011-07-31 15:01:35.009283', '2011-07-31 15:01:35.009283', 298486375)[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty8') LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty8', '2011-07-31 15:01:35.011980', '2011-07-31 15:01:35.011980')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."title" = 'Storpizza') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza2') LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty10') LIMIT 1
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty10', '2011-07-31 15:01:35.019362', '2011-07-31 15:01:35.019362')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."title" = 'tasty9') LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza3') LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "items" ("number", "title", "description", "price", "created_at", "updated_at", "category_id") VALUES (5, 'tasty9', 'A very tasty pizza3', '109', '2011-07-31 15:01:35.022092', '2011-07-31 15:01:35.022092', 298486375)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty1') LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty1', '2011-07-31 15:01:38.657017', '2011-07-31 15:01:38.657017')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM "categories"
+  Processing by CategoriesController#create as HTML
+  Parameters: {"category"=>{"name"=>"tasty2"}}
+Redirected to http://test.host/
+Completed 302 Found in 1ms
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "categories"[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty3') LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty3', '2011-07-31 15:01:38.715895', '2011-07-31 15:01:38.715895')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM "categories"
+  Processing by CategoriesController#destroy as HTML
+  Parameters: {"id"=>"298486375"}
+Redirected to http://test.host/
+Completed 302 Found in 1ms
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "categories"[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty4') LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty4', '2011-07-31 15:01:38.754920', '2011-07-31 15:01:38.754920')[0m
+  Processing by CategoriesController#edit as HTML
+  Parameters: {"id"=>"298486375"}
+Redirected to http://test.host/
+Completed 302 Found in 1ms
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty5') LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty5', '2011-07-31 15:01:38.763719', '2011-07-31 15:01:38.763719')[0m
+  Processing by CategoriesController#index as HTML
+Redirected to http://test.host/
+Completed 302 Found in 1ms
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty6') LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty6', '2011-07-31 15:01:38.771496', '2011-07-31 15:01:38.771496')[0m
+  Processing by CategoriesController#new as HTML
+Redirected to http://test.host/
+Completed 302 Found in 1ms
+  [1m[35mSQL (0.3ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty7') LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty7', '2011-07-31 15:01:38.779394', '2011-07-31 15:01:38.779394')[0m
+  Processing by CategoriesController#update as HTML
+  Parameters: {"category"=>{"created_at"=>Sun, 31 Jul 2011 15:01:38 UTC +00:00, "id"=>298486375, "name"=>"tasty7", "updated_at"=>Sun, 31 Jul 2011 15:01:38 UTC +00:00}, "id"=>"298486375"}
+Redirected to http://test.host/
+Completed 302 Found in 1ms
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty9') LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty9', '2011-07-31 15:01:38.794594', '2011-07-31 15:01:38.794594')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."title" = 'tasty8') LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza1') LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "items" ("number", "title", "description", "price", "created_at", "updated_at", "category_id") VALUES (5, 'tasty8', 'A very tasty pizza1', '109', '2011-07-31 15:01:38.800711', '2011-07-31 15:01:38.800711', 298486375)
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "items"[0m
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{"number"=>5, "title"=>"tasty10", "description"=>"A very tasty pizza2", "price"=>"109"}}
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."title" = 'tasty10') LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza2') LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "items" ("number", "title", "description", "price", "created_at", "updated_at", "category_id") VALUES (5, 'tasty10', 'A very tasty pizza2', '109', '2011-07-31 15:01:38.812762', '2011-07-31 15:01:38.812762', NULL)
+Redirected to http://test.host/items
+Completed 302 Found in 4ms
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "items"[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty12') LIMIT 1
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty12', '2011-07-31 15:01:38.817712', '2011-07-31 15:01:38.817712')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."title" = 'tasty11') LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza3') LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "items" ("number", "title", "description", "price", "created_at", "updated_at", "category_id") VALUES (5, 'tasty11', 'A very tasty pizza3', '109', '2011-07-31 15:01:38.820586', '2011-07-31 15:01:38.820586', 298486375)
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "items"[0m
+  Processing by ItemsController#destroy as HTML
+  Parameters: {"id"=>"298486375"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 298486375 LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mDELETE FROM "items" WHERE "items"."id" = 298486375[0m
+Redirected to http://test.host/items
+Completed 302 Found in 2ms
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM "items"
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty14') LIMIT 1[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty14', '2011-07-31 15:01:38.830413', '2011-07-31 15:01:38.830413')
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."title" = 'tasty13') LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza4') LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "items" ("number", "title", "description", "price", "created_at", "updated_at", "category_id") VALUES (5, 'tasty13', 'A very tasty pizza4', '109', '2011-07-31 15:01:38.865809', '2011-07-31 15:01:38.865809', 298486375)[0m
+  Processing by ItemsController#edit as HTML
+  Parameters: {"id"=>"298486375"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 298486375 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+Rendered items/_form.html.erb (8.9ms)
+Rendered layouts/_head.html.erb (1.4ms)
+Rendered layouts/_form_only_top.html.erb (0.5ms)
+Rendered layouts/_form_only_bottom.html.erb (0.3ms)
+Completed 200 OK in 38ms (Views: 36.8ms | ActiveRecord: 7.8ms)
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty16') LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty16', '2011-07-31 15:01:38.911185', '2011-07-31 15:01:38.911185')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."title" = 'tasty15') LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza5') LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "items" ("number", "title", "description", "price", "created_at", "updated_at", "category_id") VALUES (5, 'tasty15', 'A very tasty pizza5', '109', '2011-07-31 15:01:38.914449', '2011-07-31 15:01:38.914449', 298486375)
+  Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.5ms)[0m  [1mSELECT "items".* FROM "items" ORDER BY created_at ASC[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 298486375 LIMIT 1
+Rendered layouts/_head.html.erb (0.6ms)
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 1.4ms)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty18') LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty18', '2011-07-31 15:01:38.931182', '2011-07-31 15:01:38.931182')
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."title" = 'tasty17') LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza6') LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "items" ("number", "title", "description", "price", "created_at", "updated_at", "category_id") VALUES (5, 'tasty17', 'A very tasty pizza6', '109', '2011-07-31 15:01:38.934083', '2011-07-31 15:01:38.934083', 298486375)[0m
+  Processing by ItemsController#new as HTML
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories"
+Rendered items/_form.html.erb (5.5ms)
+Rendered layouts/_head.html.erb (0.7ms)
+Rendered layouts/_form_only_top.html.erb (0.1ms)
+Rendered layouts/_form_only_bottom.html.erb (0.0ms)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.9ms)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty20') LIMIT 1[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty20', '2011-07-31 15:01:38.951305', '2011-07-31 15:01:38.951305')
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."title" = 'tasty19') LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza7') LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "items" ("number", "title", "description", "price", "created_at", "updated_at", "category_id") VALUES (5, 'tasty19', 'A very tasty pizza7', '109', '2011-07-31 15:01:38.954165', '2011-07-31 15:01:38.954165', 298486375)[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{"number"=>5, "title"=>"tasty21", "description"=>"A very tasty pizza8", "price"=>"109"}, "id"=>"298486375"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 298486375 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."title" = 'tasty21') AND ("items".id <> 298486375) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza8') AND ("items".id <> 298486375) LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mUPDATE "items" SET "title" = 'tasty21', "description" = 'A very tasty pizza8', "updated_at" = '2011-07-31 15:01:38.994975' WHERE "items"."id" = 298486375[0m
+Redirected to http://test.host/items
+Completed 302 Found in 37ms
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty1') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty1', '2011-07-31 15:04:28.591052', '2011-07-31 15:04:28.591052')[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty2') LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty2', '2011-07-31 15:04:28.636452', '2011-07-31 15:04:28.636452')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."title" IS NULL) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."description" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty4') LIMIT 1
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty4', '2011-07-31 15:04:28.655191', '2011-07-31 15:04:28.655191')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."title" = 'tasty3') LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."description" = 'Kjempe pizza') LIMIT 1[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "items" ("number", "title", "description", "price", "created_at", "updated_at", "category_id") VALUES (5, 'tasty3', 'Kjempe pizza', '109', '2011-07-31 15:04:28.658164', '2011-07-31 15:04:28.658164', 298486375)
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty6') LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty6', '2011-07-31 15:04:28.664432', '2011-07-31 15:04:28.664432')
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."title" = 'tasty5') LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."description" = 'Kjempe pizza') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty7') LIMIT 1[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty7', '2011-07-31 15:04:28.670468', '2011-07-31 15:04:28.670468')
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."title" = 'Storpizza') LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza1') LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "items" ("number", "title", "description", "price", "created_at", "updated_at", "category_id") VALUES (5, 'Storpizza', 'A very tasty pizza1', '109', '2011-07-31 15:04:28.673140', '2011-07-31 15:04:28.673140', 298486375)[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty8') LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty8', '2011-07-31 15:04:28.689600', '2011-07-31 15:04:28.689600')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."title" = 'Storpizza') LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza2') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty10') LIMIT 1
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty10', '2011-07-31 15:04:28.695743', '2011-07-31 15:04:28.695743')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."title" = 'tasty9') LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza3') LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "items" ("number", "title", "description", "price", "created_at", "updated_at", "category_id") VALUES (5, 'tasty9', 'A very tasty pizza3', '109', '2011-07-31 15:04:28.698393', '2011-07-31 15:04:28.698393', 298486375)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty1') LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty1', '2011-07-31 15:04:32.419170', '2011-07-31 15:04:32.419170')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM "categories"
+  Processing by CategoriesController#create as HTML
+  Parameters: {"category"=>{"name"=>"tasty2"}}
+Redirected to http://test.host/
+Completed 302 Found in 1ms
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "categories"[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty3') LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty3', '2011-07-31 15:04:32.506501', '2011-07-31 15:04:32.506501')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM "categories"
+  Processing by CategoriesController#destroy as HTML
+  Parameters: {"id"=>"298486375"}
+Redirected to http://test.host/
+Completed 302 Found in 1ms
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "categories"[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty4') LIMIT 1
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty4', '2011-07-31 15:04:32.515180', '2011-07-31 15:04:32.515180')[0m
+  Processing by CategoriesController#edit as HTML
+  Parameters: {"id"=>"298486375"}
+Redirected to http://test.host/
+Completed 302 Found in 1ms
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty5') LIMIT 1
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty5', '2011-07-31 15:04:32.522889', '2011-07-31 15:04:32.522889')[0m
+  Processing by CategoriesController#index as HTML
+Redirected to http://test.host/
+Completed 302 Found in 1ms
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty6') LIMIT 1
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty6', '2011-07-31 15:04:32.530294', '2011-07-31 15:04:32.530294')[0m
+  Processing by CategoriesController#new as HTML
+Redirected to http://test.host/
+Completed 302 Found in 1ms
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty7') LIMIT 1
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty7', '2011-07-31 15:04:32.537776', '2011-07-31 15:04:32.537776')[0m
+  Processing by CategoriesController#update as HTML
+  Parameters: {"category"=>{"created_at"=>Sun, 31 Jul 2011 15:04:32 UTC +00:00, "id"=>298486375, "name"=>"tasty7", "updated_at"=>Sun, 31 Jul 2011 15:04:32 UTC +00:00}, "id"=>"298486375"}
+Redirected to http://test.host/
+Completed 302 Found in 1ms
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty9') LIMIT 1
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty9', '2011-07-31 15:04:32.554330', '2011-07-31 15:04:32.554330')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."title" = 'tasty8') LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza1') LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "items" ("number", "title", "description", "price", "created_at", "updated_at", "category_id") VALUES (5, 'tasty8', 'A very tasty pizza1', '109', '2011-07-31 15:04:32.559217', '2011-07-31 15:04:32.559217', 298486375)
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "items"[0m
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{"number"=>5, "title"=>"tasty10", "description"=>"A very tasty pizza2", "price"=>"109"}}
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "items" WHERE ("items"."title" = 'tasty10') LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza2') LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "items" ("number", "title", "description", "price", "created_at", "updated_at", "category_id") VALUES (5, 'tasty10', 'A very tasty pizza2', '109', '2011-07-31 15:04:32.575084', '2011-07-31 15:04:32.575084', NULL)
+Redirected to http://test.host/items
+Completed 302 Found in 5ms
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "items"[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty12') LIMIT 1
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty12', '2011-07-31 15:04:32.611265', '2011-07-31 15:04:32.611265')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."title" = 'tasty11') LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza3') LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "items" ("number", "title", "description", "price", "created_at", "updated_at", "category_id") VALUES (5, 'tasty11', 'A very tasty pizza3', '109', '2011-07-31 15:04:32.614146', '2011-07-31 15:04:32.614146', 298486375)
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "items"[0m
+  Processing by ItemsController#destroy as HTML
+  Parameters: {"id"=>"298486375"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 298486375 LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mDELETE FROM "items" WHERE "items"."id" = 298486375[0m
+Redirected to http://test.host/items
+Completed 302 Found in 3ms
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM "items"
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty14') LIMIT 1[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty14', '2011-07-31 15:04:32.624792', '2011-07-31 15:04:32.624792')
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."title" = 'tasty13') LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza4') LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "items" ("number", "title", "description", "price", "created_at", "updated_at", "category_id") VALUES (5, 'tasty13', 'A very tasty pizza4', '109', '2011-07-31 15:04:32.627738', '2011-07-31 15:04:32.627738', 298486375)[0m
+  Processing by ItemsController#edit as HTML
+  Parameters: {"id"=>"298486375"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 298486375 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+Rendered items/_form.html.erb (10.4ms)
+Rendered layouts/_head.html.erb (1.4ms)
+Rendered layouts/_form_only_top.html.erb (0.4ms)
+Rendered layouts/_form_only_bottom.html.erb (0.3ms)
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 7.3ms)
+  [1m[35mSQL (0.5ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty16') LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty16', '2011-07-31 15:04:32.670109', '2011-07-31 15:04:32.670109')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."title" = 'tasty15') LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza5') LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "items" ("number", "title", "description", "price", "created_at", "updated_at", "category_id") VALUES (5, 'tasty15', 'A very tasty pizza5', '109', '2011-07-31 15:04:32.673522', '2011-07-31 15:04:32.673522', 298486375)
+  Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.5ms)[0m  [1mSELECT "items".* FROM "items" ORDER BY created_at ASC[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 298486375 LIMIT 1
+Rendered layouts/_head.html.erb (0.7ms)
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 1.6ms)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty18') LIMIT 1[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty18', '2011-07-31 15:04:32.689575', '2011-07-31 15:04:32.689575')
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."title" = 'tasty17') LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza6') LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "items" ("number", "title", "description", "price", "created_at", "updated_at", "category_id") VALUES (5, 'tasty17', 'A very tasty pizza6', '109', '2011-07-31 15:04:32.692369', '2011-07-31 15:04:32.692369', 298486375)[0m
+  Processing by ItemsController#new as HTML
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories"
+Rendered items/_form.html.erb (36.5ms)
+Rendered layouts/_head.html.erb (0.6ms)
+Rendered layouts/_form_only_top.html.erb (0.1ms)
+Rendered layouts/_form_only_bottom.html.erb (0.0ms)
+Completed 200 OK in 41ms (Views: 40.1ms | ActiveRecord: 0.8ms)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty20') LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty20', '2011-07-31 15:04:32.739847', '2011-07-31 15:04:32.739847')
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."title" = 'tasty19') LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza7') LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "items" ("number", "title", "description", "price", "created_at", "updated_at", "category_id") VALUES (5, 'tasty19', 'A very tasty pizza7', '109', '2011-07-31 15:04:32.742918', '2011-07-31 15:04:32.742918', 298486375)[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{"number"=>5, "title"=>"tasty21", "description"=>"A very tasty pizza8", "price"=>"109"}, "id"=>"298486375"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 298486375 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."title" = 'tasty21') AND ("items".id <> 298486375) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza8') AND ("items".id <> 298486375) LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mUPDATE "items" SET "title" = 'tasty21', "description" = 'A very tasty pizza8', "updated_at" = '2011-07-31 15:04:32.750379' WHERE "items"."id" = 298486375[0m
+Redirected to http://test.host/items
+Completed 302 Found in 5ms
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty1') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty1', '2011-07-31 15:08:51.829397', '2011-07-31 15:08:51.829397')[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty2') LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty2', '2011-07-31 15:08:51.844377', '2011-07-31 15:08:51.844377')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."title" IS NULL) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."description" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty4') LIMIT 1
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty4', '2011-07-31 15:08:51.858144', '2011-07-31 15:08:51.858144')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."title" = 'tasty3') LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."description" = 'Kjempe pizza') LIMIT 1[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "items" ("number", "title", "description", "price", "created_at", "updated_at", "category_id") VALUES (5, 'tasty3', 'Kjempe pizza', '109', '2011-07-31 15:08:51.860857', '2011-07-31 15:08:51.860857', 298486375)
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty6') LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty6', '2011-07-31 15:08:51.867049', '2011-07-31 15:08:51.867049')
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."title" = 'tasty5') LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."description" = 'Kjempe pizza') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty7') LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty7', '2011-07-31 15:08:51.906169', '2011-07-31 15:08:51.906169')
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."title" = 'Storpizza') LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza1') LIMIT 1
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "items" ("number", "title", "description", "price", "created_at", "updated_at", "category_id") VALUES (5, 'Storpizza', 'A very tasty pizza1', '109', '2011-07-31 15:08:51.910678', '2011-07-31 15:08:51.910678', 298486375)[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty8') LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty8', '2011-07-31 15:08:51.912990', '2011-07-31 15:08:51.912990')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."title" = 'Storpizza') LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza2') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty10') LIMIT 1
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty10', '2011-07-31 15:08:51.919501', '2011-07-31 15:08:51.919501')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."title" = 'tasty9') LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza3') LIMIT 1[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "items" ("number", "title", "description", "price", "created_at", "updated_at", "category_id") VALUES (5, 'tasty9', 'A very tasty pizza3', '109', '2011-07-31 15:08:51.922849', '2011-07-31 15:08:51.922849', 298486375)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty1') LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty1', '2011-07-31 15:08:55.566853', '2011-07-31 15:08:55.566853')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM "categories"
+  Processing by CategoriesController#create as HTML
+  Parameters: {"category"=>{"name"=>"tasty2"}}
+Redirected to http://test.host/
+Completed 302 Found in 1ms
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "categories"[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty3') LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty3', '2011-07-31 15:08:55.623014', '2011-07-31 15:08:55.623014')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM "categories"
+  Processing by CategoriesController#destroy as HTML
+  Parameters: {"id"=>"298486375"}
+Redirected to http://test.host/
+Completed 302 Found in 1ms
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "categories"[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty4') LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty4', '2011-07-31 15:08:55.631798', '2011-07-31 15:08:55.631798')[0m
+  Processing by CategoriesController#edit as HTML
+  Parameters: {"id"=>"298486375"}
+Redirected to http://test.host/
+Completed 302 Found in 1ms
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty5') LIMIT 1
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty5', '2011-07-31 15:08:55.673258', '2011-07-31 15:08:55.673258')[0m
+  Processing by CategoriesController#index as HTML
+Redirected to http://test.host/
+Completed 302 Found in 1ms
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty6') LIMIT 1
+  [1m[36mAREL (15.6ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty6', '2011-07-31 15:08:55.696128', '2011-07-31 15:08:55.696128')[0m
+  Processing by CategoriesController#new as HTML
+Redirected to http://test.host/
+Completed 302 Found in 1ms
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty7') LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty7', '2011-07-31 15:08:55.899234', '2011-07-31 15:08:55.899234')[0m
+  Processing by CategoriesController#update as HTML
+  Parameters: {"category"=>{"created_at"=>Sun, 31 Jul 2011 15:08:55 UTC +00:00, "id"=>298486375, "name"=>"tasty7", "updated_at"=>Sun, 31 Jul 2011 15:08:55 UTC +00:00}, "id"=>"298486375"}
+Redirected to http://test.host/
+Completed 302 Found in 1ms
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty9') LIMIT 1
+  [1m[36mAREL (0.7ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty9', '2011-07-31 15:08:55.952461', '2011-07-31 15:08:55.952461')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."title" = 'tasty8') LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza1') LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "items" ("number", "title", "description", "price", "created_at", "updated_at", "category_id") VALUES (5, 'tasty8', 'A very tasty pizza1', '109', '2011-07-31 15:08:55.957569', '2011-07-31 15:08:55.957569', 298486375)
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "items"[0m
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{"number"=>5, "title"=>"tasty10", "description"=>"A very tasty pizza2", "price"=>"109"}}
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."title" = 'tasty10') LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza2') LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "items" ("number", "title", "description", "price", "created_at", "updated_at", "category_id") VALUES (5, 'tasty10', 'A very tasty pizza2', '109', '2011-07-31 15:08:55.968928', '2011-07-31 15:08:55.968928', NULL)
+Redirected to http://test.host/items
+Completed 302 Found in 4ms
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT COUNT(*) FROM "items"[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty12') LIMIT 1
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty12', '2011-07-31 15:08:55.974413', '2011-07-31 15:08:55.974413')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."title" = 'tasty11') LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza3') LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "items" ("number", "title", "description", "price", "created_at", "updated_at", "category_id") VALUES (5, 'tasty11', 'A very tasty pizza3', '109', '2011-07-31 15:08:55.977245', '2011-07-31 15:08:55.977245', 298486375)
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "items"[0m
+  Processing by ItemsController#destroy as HTML
+  Parameters: {"id"=>"298486375"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 298486375 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mDELETE FROM "items" WHERE "items"."id" = 298486375[0m
+Redirected to http://test.host/items
+Completed 302 Found in 2ms
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM "items"
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty14') LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty14', '2011-07-31 15:08:55.989512', '2011-07-31 15:08:55.989512')
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."title" = 'tasty13') LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza4') LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "items" ("number", "title", "description", "price", "created_at", "updated_at", "category_id") VALUES (5, 'tasty13', 'A very tasty pizza4', '109', '2011-07-31 15:08:55.992587', '2011-07-31 15:08:55.992587', 298486375)[0m
+  Processing by ItemsController#edit as HTML
+  Parameters: {"id"=>"298486375"}
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 298486375 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+Rendered items/_form.html.erb (9.4ms)
+Rendered layouts/_head.html.erb (29.8ms)
+Rendered layouts/_form_only_top.html.erb (0.4ms)
+Rendered layouts/_form_only_bottom.html.erb (0.3ms)
+Completed 200 OK in 91ms (Views: 89.7ms | ActiveRecord: 23.9ms)
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty16') LIMIT 1
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty16', '2011-07-31 15:08:56.091416', '2011-07-31 15:08:56.091416')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."title" = 'tasty15') LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza5') LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "items" ("number", "title", "description", "price", "created_at", "updated_at", "category_id") VALUES (5, 'tasty15', 'A very tasty pizza5', '109', '2011-07-31 15:08:56.094723', '2011-07-31 15:08:56.094723', 298486375)
+  Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.5ms)[0m  [1mSELECT "items".* FROM "items" ORDER BY created_at ASC[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 298486375 LIMIT 1
+Rendered layouts/_head.html.erb (0.6ms)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 1.4ms)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty18') LIMIT 1[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty18', '2011-07-31 15:08:56.111292', '2011-07-31 15:08:56.111292')
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."title" = 'tasty17') LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza6') LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "items" ("number", "title", "description", "price", "created_at", "updated_at", "category_id") VALUES (5, 'tasty17', 'A very tasty pizza6', '109', '2011-07-31 15:08:56.114439', '2011-07-31 15:08:56.114439', 298486375)[0m
+  Processing by ItemsController#new as HTML
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories"
+Rendered items/_form.html.erb (5.4ms)
+Rendered layouts/_head.html.erb (0.7ms)
+Rendered layouts/_form_only_top.html.erb (0.1ms)
+Rendered layouts/_form_only_bottom.html.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.9ms)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty20') LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty20', '2011-07-31 15:08:56.131152', '2011-07-31 15:08:56.131152')
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."title" = 'tasty19') LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza7') LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "items" ("number", "title", "description", "price", "created_at", "updated_at", "category_id") VALUES (5, 'tasty19', 'A very tasty pizza7', '109', '2011-07-31 15:08:56.134366', '2011-07-31 15:08:56.134366', 298486375)[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{"number"=>5, "title"=>"tasty21", "description"=>"A very tasty pizza8", "price"=>"109"}, "id"=>"298486375"}
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 298486375 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."title" = 'tasty21') AND ("items".id <> 298486375) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza8') AND ("items".id <> 298486375) LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mUPDATE "items" SET "title" = 'tasty21', "description" = 'A very tasty pizza8', "updated_at" = '2011-07-31 15:08:56.143147' WHERE "items"."id" = 298486375[0m
+Redirected to http://test.host/items
+Completed 302 Found in 6ms
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty1') LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (0.6ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty1', '2011-07-31 15:09:26.068833', '2011-07-31 15:09:26.068833')[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty2') LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty2', '2011-07-31 15:09:26.152703', '2011-07-31 15:09:26.152703')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."title" IS NULL) LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."description" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty4') LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty4', '2011-07-31 15:09:26.183387', '2011-07-31 15:09:26.183387')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."title" = 'tasty3') LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."description" = 'Kjempe pizza') LIMIT 1[0m
+  [1m[35mAREL (0.5ms)[0m  INSERT INTO "items" ("number", "title", "description", "price", "created_at", "updated_at", "category_id") VALUES (5, 'tasty3', 'Kjempe pizza', '109', '2011-07-31 15:09:26.186412', '2011-07-31 15:09:26.186412', 298486375)
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty6') LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty6', '2011-07-31 15:09:26.193739', '2011-07-31 15:09:26.193739')
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."title" = 'tasty5') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "items" WHERE ("items"."description" = 'Kjempe pizza') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty7') LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty7', '2011-07-31 15:09:26.233421', '2011-07-31 15:09:26.233421')
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."title" = 'Storpizza') LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza1') LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "items" ("number", "title", "description", "price", "created_at", "updated_at", "category_id") VALUES (5, 'Storpizza', 'A very tasty pizza1', '109', '2011-07-31 15:09:26.236519', '2011-07-31 15:09:26.236519', 298486375)[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty8') LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty8', '2011-07-31 15:09:26.238434', '2011-07-31 15:09:26.238434')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."title" = 'Storpizza') LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza2') LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty10') LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty10', '2011-07-31 15:09:26.244924', '2011-07-31 15:09:26.244924')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."title" = 'tasty9') LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza3') LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "items" ("number", "title", "description", "price", "created_at", "updated_at", "category_id") VALUES (5, 'tasty9', 'A very tasty pizza3', '109', '2011-07-31 15:09:26.247732', '2011-07-31 15:09:26.247732', 298486375)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty1') LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty1', '2011-07-31 15:09:29.878714', '2011-07-31 15:09:29.878714')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM "categories"
+  Processing by CategoriesController#create as HTML
+  Parameters: {"category"=>{"name"=>"tasty2"}}
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty2') LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty2', '2011-07-31 15:09:29.909801', '2011-07-31 15:09:29.909801')
+Redirected to http://test.host/categories
+Completed 302 Found in 3ms
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "categories"[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty3') LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty3', '2011-07-31 15:09:29.914426', '2011-07-31 15:09:29.914426')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM "categories"
+  Processing by CategoriesController#destroy as HTML
+  Parameters: {"id"=>"298486375"}
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 298486375 LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  DELETE FROM "categories" WHERE "categories"."id" = 298486375
+Redirected to http://test.host/categories
+Completed 302 Found in 2ms
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "categories"[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty4') LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty4', '2011-07-31 15:09:29.924133', '2011-07-31 15:09:29.924133')[0m
+  Processing by CategoriesController#edit as HTML
+  Parameters: {"id"=>"298486375"}
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 298486375 LIMIT 1
+Rendered categories/_form.html.erb (5.9ms)
+Rendered layouts/_head.html.erb (1.1ms)
+Completed 200 OK in 92ms (Views: 90.6ms | ActiveRecord: 3.1ms)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty5') LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty5', '2011-07-31 15:09:30.022665', '2011-07-31 15:09:30.022665')
+  Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories" ORDER BY name[0m
+Rendered layouts/_head.html.erb (0.6ms)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.7ms)
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty6') LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty6', '2011-07-31 15:09:30.068562', '2011-07-31 15:09:30.068562')[0m
+  Processing by CategoriesController#new as HTML
+Rendered categories/_form.html.erb (2.3ms)
+Rendered layouts/_head.html.erb (0.6ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.4ms)
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty7') LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty7', '2011-07-31 15:09:30.082164', '2011-07-31 15:09:30.082164')[0m
+  Processing by CategoriesController#update as HTML
+  Parameters: {"category"=>{"created_at"=>Sun, 31 Jul 2011 15:09:30 UTC +00:00, "id"=>298486375, "name"=>"tasty7", "updated_at"=>Sun, 31 Jul 2011 15:09:30 UTC +00:00}, "id"=>"298486375"}
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 298486375 LIMIT 1
+WARNING: Can't mass-assign protected attributes: id
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty7') AND ("categories".id <> 298486375) LIMIT 1[0m
+Redirected to http://test.host/categories
+Completed 302 Found in 4ms
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty9') LIMIT 1
+  [1m[36mAREL (0.8ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty9', '2011-07-31 15:09:30.100096', '2011-07-31 15:09:30.100096')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."title" = 'tasty8') LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza1') LIMIT 1[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "items" ("number", "title", "description", "price", "created_at", "updated_at", "category_id") VALUES (5, 'tasty8', 'A very tasty pizza1', '109', '2011-07-31 15:09:30.106415', '2011-07-31 15:09:30.106415', 298486375)
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "items"[0m
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{"number"=>5, "title"=>"tasty10", "description"=>"A very tasty pizza2", "price"=>"109"}}
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "items" WHERE ("items"."title" = 'tasty10') LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza2') LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "items" ("number", "title", "description", "price", "created_at", "updated_at", "category_id") VALUES (5, 'tasty10', 'A very tasty pizza2', '109', '2011-07-31 15:09:30.118760', '2011-07-31 15:09:30.118760', NULL)
+Redirected to http://test.host/items
+Completed 302 Found in 5ms
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "items"[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty12') LIMIT 1
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty12', '2011-07-31 15:09:30.124260', '2011-07-31 15:09:30.124260')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."title" = 'tasty11') LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza3') LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "items" ("number", "title", "description", "price", "created_at", "updated_at", "category_id") VALUES (5, 'tasty11', 'A very tasty pizza3', '109', '2011-07-31 15:09:30.127131', '2011-07-31 15:09:30.127131', 298486375)
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "items"[0m
+  Processing by ItemsController#destroy as HTML
+  Parameters: {"id"=>"298486375"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 298486375 LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mDELETE FROM "items" WHERE "items"."id" = 298486375[0m
+Redirected to http://test.host/items
+Completed 302 Found in 2ms
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM "items"
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty14') LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty14', '2011-07-31 15:09:30.170020', '2011-07-31 15:09:30.170020')
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."title" = 'tasty13') LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza4') LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "items" ("number", "title", "description", "price", "created_at", "updated_at", "category_id") VALUES (5, 'tasty13', 'A very tasty pizza4', '109', '2011-07-31 15:09:30.172947', '2011-07-31 15:09:30.172947', 298486375)[0m
+  Processing by ItemsController#edit as HTML
+  Parameters: {"id"=>"298486375"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 298486375 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+Rendered items/_form.html.erb (6.7ms)
+Rendered layouts/_head.html.erb (0.7ms)
+Rendered layouts/_form_only_top.html.erb (0.4ms)
+Rendered layouts/_form_only_bottom.html.erb (0.3ms)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 4.7ms)
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty16') LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty16', '2011-07-31 15:09:30.196069', '2011-07-31 15:09:30.196069')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."title" = 'tasty15') LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza5') LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "items" ("number", "title", "description", "price", "created_at", "updated_at", "category_id") VALUES (5, 'tasty15', 'A very tasty pizza5', '109', '2011-07-31 15:09:30.199029', '2011-07-31 15:09:30.199029', 298486375)
+  Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.6ms)[0m  [1mSELECT "items".* FROM "items" ORDER BY created_at ASC[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 298486375 LIMIT 1
+Rendered layouts/_head.html.erb (0.6ms)
+Completed 200 OK in 9ms (Views: 5.9ms | ActiveRecord: 1.4ms)
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty18') LIMIT 1[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty18', '2011-07-31 15:09:30.216460', '2011-07-31 15:09:30.216460')
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."title" = 'tasty17') LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza6') LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "items" ("number", "title", "description", "price", "created_at", "updated_at", "category_id") VALUES (5, 'tasty17', 'A very tasty pizza6', '109', '2011-07-31 15:09:30.220108', '2011-07-31 15:09:30.220108', 298486375)[0m
+  Processing by ItemsController#new as HTML
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories"
+Rendered items/_form.html.erb (4.8ms)
+Rendered layouts/_head.html.erb (0.6ms)
+Rendered layouts/_form_only_top.html.erb (0.1ms)
+Rendered layouts/_form_only_bottom.html.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 1.5ms)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "categories" WHERE ("categories"."name" = 'tasty20') LIMIT 1[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ('tasty20', '2011-07-31 15:09:30.236246', '2011-07-31 15:09:30.236246')
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."title" = 'tasty19') LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza7') LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "items" ("number", "title", "description", "price", "created_at", "updated_at", "category_id") VALUES (5, 'tasty19', 'A very tasty pizza7', '109', '2011-07-31 15:09:30.239905', '2011-07-31 15:09:30.239905', 298486375)[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{"number"=>5, "title"=>"tasty21", "description"=>"A very tasty pizza8", "price"=>"109"}, "id"=>"298486375"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = 298486375 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "items" WHERE ("items"."title" = 'tasty21') AND ("items".id <> 298486375) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT 1 FROM "items" WHERE ("items"."description" = 'A very tasty pizza8') AND ("items".id <> 298486375) LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mUPDATE "items" SET "title" = 'tasty21', "description" = 'A very tasty pizza8', "updated_at" = '2011-07-31 15:09:30.280264' WHERE "items"."id" = 298486375[0m
+Redirected to http://test.host/items
+Completed 302 Found in 5ms

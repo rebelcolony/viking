@@ -3,7 +3,7 @@ require 'test_helper'
 class ItemsControllerTest < ActionController::TestCase
   setup do
     @item = Factory(:item)        
-    session[:password] == "viking"
+    session[:password] = "viking"
   end
   
   test "should get index" do
