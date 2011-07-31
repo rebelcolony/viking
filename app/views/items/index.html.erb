@@ -1,0 +1,32 @@
+<% if admin? %>
+	<%= link_to 'New Item', new_item_path, :class => 'brown_button', :id => 'new_item_button' %>
+<% end -%>	
+
+<% @items_by_category.each do |category, items| %>
+	<% if category %>
+		<h3 class="category_heading"><%= category.name %></h3>
+			<table class="menu_table">
+				<% for item in items %>
+  				<tr class="normal_row">
+    				<td class="number"><%= item.number %></td>
+    				<td class="title">
+							<%= item.title %>
+							<% if admin? %>
+								<%= link_to 'Edit', edit_item_path(item), :class => 'admin_button' %>
+								<%= link_to 'Destroy', item, :confirm => 'Are you sure?', :method => :delete, :class => 'admin_button' %>
+							<% end -%>
+							</td>
+    				<td class="price"><%= item.price %></td>
+					</tr>	
+					<tr class="description_row">
+						<td></td>
+    				<td><span class="smaller_menu_text"><%= item.description %></span></td>
+    				<td></td>	
+  				</tr>
+				<% end %>
+			</table>
+	  <% end %>
+<% end -%>
+
+
+

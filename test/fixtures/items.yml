@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+margaritta:
+  number: 1
+  title: Margarita
+  description: tomatsaus ost
+  price: 90/50
+
+two:
+  number: 1
+  title: MyString
+  description: MyString
+  price: MyString

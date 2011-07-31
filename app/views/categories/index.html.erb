@@ -1,0 +1,16 @@
+<div class="categories">
+	<% if admin? %>
+		<%= link_to 'New Category', new_category_path, :class => 'brown_button' %>
+	<% end -%>	
+	<ul>
+		<% @categories.each do |category| %>
+			<li>
+				<%= category.name %>
+				<% if admin? %>
+    			<%= link_to 'Edit', edit_category_path(category), :class => 'admin_button' %>
+    			<%= link_to 'Destroy', category, :confirm => 'Are you sure?', :method => :delete, :class => 'admin_button' %>
+				<% end -%>
+			</li>	
+		<% end %>
+	</ul>	
+</div><!-- END .categories -->

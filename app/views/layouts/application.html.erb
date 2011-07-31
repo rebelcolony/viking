@@ -1,0 +1,24 @@
+<%= render :partial => 'layouts/head' %>
+<body>
+<div id="wrapper">
+		<section id="header">
+			<div id="flash">
+				<p class="notice"><%= notice %></p>
+				<p class="alert"><%= alert %></p>
+			<!-- END #flash --></div>
+			<div id="logo">
+				<%= link_to "", :root, :id => 'logo_link' %>
+				
+			<!-- END #logo --></div>
+			<div id="banner">
+				<%= image_tag 'telephone.png', :id => 'telephone' %>			
+			<!-- END #banner --></div>
+		</section>	
+		<section id="content">
+			<div id="menu">
+				<%= yield %>
+			</div>
+		</section>	
+<!-- END #wrapper --></div>
+</body>
+</html>
