@@ -12006,3 +12006,18 @@ Started GET "/" for 127.0.0.1 at 2011-07-31 11:45:54 +0200
 Rendered layouts/_head.html.erb (1.7ms)
 Rendered items/index.html.erb within layouts/application (38.2ms)
 Completed 200 OK in 557ms (Views: 96.9ms | ActiveRecord: 31.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-07-31 14:07:05 +0200
+  Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.8ms)[0m  [1mSELECT "items".* FROM "items" ORDER BY created_at ASC[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+Rendered layouts/_head.html.erb (1.5ms)
+Rendered items/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 216ms (Views: 9.8ms | ActiveRecord: 1.4ms)
