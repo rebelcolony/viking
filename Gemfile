@@ -7,7 +7,7 @@ gem 'rails', '3.0.7'
 
 gem 'sqlite3'
 gem 'factory_girl_rails'
-gem 'mysql2', '0.2.11'
+
 gem "rake", "0.8.7"
 
 # Use unicorn as the web server
@@ -29,6 +29,11 @@ gem "rake", "0.8.7"
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators
 # and rake tasks are available in development mode:
+group :production do
+  gem 'mysql2', '0.2.11'
+end
+
+
 group :test do
   gem 'watchr'
   gem 'turn'
