@@ -1,4 +1,12 @@
 <%= render :partial => 'layouts/head' %>
-<%= render :partial => 'layouts/form_only_top' %>
+<body class="form_only">
+<div id="wrapper">
+	<div class="form_content_item">
+		<div class="alert_message">
+			<p class="alert_text"><%= alert %></p>
+		<!-- END .alert --></div>
 <%= yield %>
-<%= render :partial => 'layouts/form_only_bottom' %>
+	<!-- END .form_content --></div>
+<!-- END #wrapper --></div>
+</body>
+</html>

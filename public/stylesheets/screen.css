@@ -11,7 +11,7 @@ body {
 	
 body.form_only {
 	background-color: #f5e9cf;
-	background-image:none;
+	background:url(../images/wood-bg.jpg) repeat; 
 }	
 	
 #wrapper {
@@ -106,23 +106,42 @@ table.menu_table {
 }
 
 	.form_box {
-		margin-top:56px;
+	  height:120px;
 		width:400px;
 		margin-left:auto;
 		margin-right:auto;
-		border:1px solid #D0A235;
-		border-radius: 14px;
+		border:1px solid #795E1F;
+		border-radius: 8px;
 		padding:6px;
 		color:#836215;
 		font-family:Verdana;
 		font-size:14px;
-		background: #ebe2c3 url(../images/login_form_box-bg.png) repeat-x top;
-		box-shadow: 0px 1px 2px #AAA;
-		-webkit-box-shadow: 0px 1px 2px #AAA;
-		-o-background-size: 100% 100%;
-		-moz-background-size: 100% 100%;
-		-webkit-background-size: 100% 100%;
-		background-size: 100% 100%;
+		background-image:url(../images/login_form_box-bg.png) repeat-x top;
+		background: -moz-linear-gradient(
+			top,
+			#fdfde5,
+			#ebe2c3
+		);
+		background: -webkit-gradient(
+			linear,
+			left top, left bottom,
+			from(#fdfde5),
+			to(#ebe2c3)
+		);
+}
+
+	.form_box_item {
+	  height:334px;
+		width:400px;
+		margin-left:auto;
+		margin-right:auto;
+		border:1px solid #795E1F;
+		border-radius: 8px;
+		padding:6px;
+		color:#836215;
+		font-family:Verdana;
+		font-size:14px;
+		background-image:url(../images/item_form_bg_image.png) repeat-x top;
 		background: -moz-linear-gradient(
 			top,
 			#fdfde5,
@@ -140,8 +159,7 @@ table.menu_table {
 	width:365px;
 	height:39px;
 	background:url(../images/login_box_title.png);
-	margin-left:12px;
-	margin-bottom:20px;
+	margin:4px 0px 13px 16px;
 }
 
 
@@ -203,6 +221,7 @@ h3.form_heading {
 	-webkit-background-clip: padding-box; 
 	cursor:hand;
 	cursor:pointer;
+	text-decoration:none;
 }
 
 .admin_button {
@@ -248,6 +267,7 @@ h3.form_heading {
 	-webkit-background-clip: padding-box; 
 	cursor:hand;
 	cursor:pointer;
+	text-decoration:none;
 }
 
 
@@ -261,28 +281,35 @@ h3.form_heading {
 	margin-top:11px;
 }
 
-input#password {
-	height:18px;
-	font-size:16px;
-	width:140px;
-}
 
 .form_content {
 	margin-left:auto;
+	height:308px;
 	background:url(../images/login_bg_image.png) no-repeat;
 	margin-right:auto;
 	width:581px;
 	margin-top:100px;
+	padding-top:67px;
 }
 
-div.alert {
+.form_content_item {
+	margin-left:auto;
+	height:600px;
+	background:url(../images/item_form_bg_image.png) no-repeat;
+	margin-right:auto;
+	width:581px;
+	margin-top:100px;
+	padding-top:61px;
+}
+
+div.alert_messgae {
 	width:512px;
 	height:20px;
 	margin-left: 28px;
 	
 }
 
-p.alert {
+p.alert_text {
 	background:#EF1935;
 	text-align:center;
 	color:#fff;
@@ -324,23 +351,31 @@ div.field, div.actions {
 	width:70px;
 }
 
-input#item_number {
-	width:40px;
+.form-horizontal .control-label {
+  width:108px;
+  font-size:12px;
 }
 
-input#item_price {
-	width:40px;
+.form-horizontal .controls {
+  margin-left:120px;
 }
 
-input#item_submit {
-	margin-left:70px;
-	margin-top:10px;
-	margin-bottom:10px;
+.form-horizontal .form-actions {
+  margin-top: 18px;
+  margin-bottom: 18px;
+  padding:0 0 0 160px;
+  background:0;
+  border:0;
 }
 
 #new_back_button {
-	margin-left:70px;
-} 
+  font-size:10px;
+}
+
+#new_back_button:hover {
+ background:0;
+ color:#9F6215; 
+}
 
 #flash {
 	margin-right:auto;

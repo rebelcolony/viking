@@ -2,13 +2,9 @@
 	<div id="login_form_heading">
 	</div>	
 	<div class="form">
-		<%= form_tag sessions_path do %>
-			<div class="field">
-  			Enter your password: <%= password_field_tag :password %>
-			</div>
-			<div class="actions">	
-				<%= submit_tag "Log in", :class => 'brown_button', :id => 'login_button' %>
-			</div>	
+		<%= form_tag sessions_path, {:class => "form-inline"} do %>
+			<input id="password" name="password" type="password" class="input-large" placeholder="Password">
+			<button type="submit" class="btn">Sign in</button>
 		<% end -%>
 	<!-- END .form --></div>
 <!-- END .form_box --></div>	
